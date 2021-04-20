@@ -1,0 +1,9 @@
+**/bin/
+bin-int/
+
+*.log
+.vs/
+**.sln
+**.vcxprj
+**.vcxprj.filters
+**.vcxproj.user
