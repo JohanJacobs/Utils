@@ -1,2 +1,2 @@
 # Utils
-Classes and tools used when programming
+Simple tools used when programming and exploring algorithms
