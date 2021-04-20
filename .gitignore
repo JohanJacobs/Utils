@@ -3,6 +3,8 @@ bin-int/
 bin/
 .vs/
 
+Makefile
+
 *.log
 **.sln
 **.vcxproj
