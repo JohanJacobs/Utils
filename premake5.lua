@@ -5,6 +5,7 @@ workspace "Utils"
 IncludeDir = {} 
 IncludeDir["utils"] = "%{wks.location}/Utils/src"
 IncludeDir["spdlog"] = "%{wks.location}/Utils/vendor/spdlog/include"
+IncludeDir["effolkronium"] = "%{wks.location}/Utils/vendor/effolkronium/include"
 
 flags
 	{

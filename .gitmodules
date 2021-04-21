@@ -2,3 +2,6 @@
 [submodule "Utils/vendor/spdlog"]
 	path = Utils/vendor/spdlog
 	url = https://github.com/gabime/spdlog
+[submodule "Utils\\vendor\\effolkronium"]
+	path = Utils\\vendor\\effolkronium
+	url = https://github.com/effolkronium/random

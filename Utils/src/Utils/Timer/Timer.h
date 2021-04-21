@@ -23,8 +23,7 @@ namespace UTILS
 
 	private:
 		std::string m_Name;
-		std::chrono::time_point<std::chrono::steady_clock> m_StartTime;
-		bool m_LoggerUp{false};
+		std::chrono::time_point<std::chrono::steady_clock> m_StartTime;		
 	};
 }
 

@@ -17,7 +17,8 @@ project "Sandbox"
     includedirs
     {
         IncludeDir["utils"],
-        IncludeDir["spdlog"]
+        IncludeDir["spdlog"],
+        IncludeDir["effolkronium"]
     }
 
 

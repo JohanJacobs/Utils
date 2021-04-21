@@ -30,12 +30,18 @@ namespace UTILS
 	class Log
 	{
 	public:
+
+		static Ref<spdlog::logger>& GetLogger()
+		{
+			if (!s_LoggerInit)			
+				Init();			
+			return s_Logger;
+		}
+	private:
 		static void Init();
-
-		static Ref<spdlog::logger>& GetLogger() { return s_Logger; }		
-
 	private:
 		static Ref<spdlog::logger> s_Logger;
+		static bool s_LoggerInit;
 	};
 }
 

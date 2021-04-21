@@ -17,7 +17,8 @@ project "Utils"
     includedirs
     {
         "src",
-        "vendor/spdlog/include"
+        IncludeDir["spdlog"],
+        IncludeDir["effolkronium"]
     }
 
     filter "configurations:Debug"

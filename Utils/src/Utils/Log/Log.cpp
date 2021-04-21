@@ -4,8 +4,10 @@
 #include <spdlog/sinks/basic_file_sink.h>
 
 namespace UTILS
-{
+{	
 	Ref<spdlog::logger> Log::s_Logger;
+	bool Log::s_LoggerInit = false;
+	
 	void Log::Init()
 	{
 		std::vector<spdlog::sink_ptr> logSinks;
@@ -20,5 +22,8 @@ namespace UTILS
 
 		s_Logger->set_level(spdlog::level::trace);
 		s_Logger->flush_on(spdlog::level::trace);
-	}
+
+		s_LoggerInit = true;
+		ULOG_INFO("logger is up..");
+	}	
 }

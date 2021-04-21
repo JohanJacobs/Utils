@@ -6,11 +6,7 @@ namespace UTILS
 		:m_Name(name)
 	{
 		m_StartTime = std::chrono::steady_clock::now();
-		if (Log::GetLogger())
-		{
-			m_LoggerUp = true;
-			ULOG_INFO("Timer start: " + name );
-		}
+		ULOG_INFO("Timer start: " + name );
 	}
 
 	Timer::~Timer()
@@ -22,10 +18,6 @@ namespace UTILS
 		
 		std::chrono::microseconds elapsed_time = high_resolution_end_time.time_since_epoch() - high_resolution_start_time.time_since_epoch();
 				
-		if (m_LoggerUp)
-		{
-			ULOG_INFO("Timer end: " + m_Name + " ( " + std::to_string(elapsed_time.count()) + " us )");
-		}
+		ULOG_INFO("Timer end: " + m_Name + " ( " + std::to_string(elapsed_time.count()) + " us )");	
 	}
-
 }
