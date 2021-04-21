@@ -2,7 +2,7 @@ project "Sandbox"
     kind "ConsoleApp"
     language "C++"
     cppdialect "C++17"
-
+    staticruntime "on"
     links {"Utils"}
 
     targetdir ("%{wks.location}/bin/%{cfg.buildcfg}-%{prj.name}")
@@ -22,7 +22,9 @@ project "Sandbox"
 
 
     filter "configurations:Debug"
-        symbols "On"
+    runtime "Debug"
+    symbols "On"
         
     filter "configurations:Release"    
+        runtime "Release"
         optimize "On"

@@ -32,7 +32,7 @@ namespace UTILS
 	public:
 		static void Init();
 
-		static Ref<spdlog::logger>& GetLogger() { return s_Logger; }
+		static Ref<spdlog::logger>& GetLogger() { return s_Logger; }		
 
 	private:
 		static Ref<spdlog::logger> s_Logger;
